@@ -7,8 +7,10 @@
 }
 
 body{
-  background-image: url("img/Nubes.jpg");
+  background-image: url("img/Nubes.jpg"), linear-gradient(#ffffff8a,#ffffff8a);
+  background-blend-mode:lighten;
   background-position: center;
+  background-size: 300px;
 }
 
 .tituloImg{
