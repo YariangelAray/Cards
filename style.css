@@ -6,13 +6,19 @@
   box-sizing: border-box;
 }
 
+.fila{
+  display: flex;
+  justify-content: center;
+}
+
 .card{
   display: inline-block;
   background-color: #e9e2b8;
   width: 300px;
+  height: 530px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #011018;
-  margin: 10px 10px;
+  margin: 15px 10px;
   padding: 0 10px;
   text-align: center;
   background-image: url("img/Esferas.png");
@@ -22,10 +28,10 @@
 }
 
 .img{
-  width: 75%;
-  filter: drop-shadow(0 0 10px #011018);
+  height: 55%;
+  filter: drop-shadow(0 0 8px #011018);
   display: block;
-  margin: 0 auto;
+  margin: 15px auto 0;
 }
 
 h1{
@@ -33,6 +39,8 @@ h1{
   color: chocolate;
   filter: drop-shadow(1px 1px #000);
   margin: 5px 0;
+  letter-spacing: 1px;
+  font-size:x-large;
 }
 
 p{
@@ -46,8 +54,8 @@ p{
   display:inline-block;
   color: #fff;
   background-color: #002f49;
-  padding: 10px 25px;
+  padding: 10px 30px;
   border-radius: 10px;
-  margin: 20px;
+  margin: 15px;
   box-shadow: 0 0 3px #000;
 }
