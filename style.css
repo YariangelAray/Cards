@@ -6,6 +6,23 @@
   box-sizing: border-box;
 }
 
+.Titulo{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.tituloImg{
+  display: block;
+  height: 150px;
+  margin: 0 auto;
+}
+
+hr{
+  margin: 0 15%;
+  border: 2px solid #002f49
+}
+
 .fila{
   display: flex;
   justify-content: center;
@@ -22,7 +39,7 @@
   padding: 0 10px;
   text-align: center;
   background-image: url("img/Esferas.png");
-  background-size: 250px;
+  background-size: 90%;
   background-repeat: no-repeat;
   background-position: top 5% center;
 }
@@ -39,7 +56,7 @@ h1{
   color: chocolate;
   filter: drop-shadow(1px 1px #000);
   margin: 5px 0;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   font-size:x-large;
 }
 
@@ -50,6 +67,7 @@ p{
 
 .info{
   font-family: "Roboto Mono", monospace;
+  font-weight: bold;
   text-decoration: none;
   display:inline-block;
   color: #fff;
