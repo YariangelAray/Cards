@@ -6,21 +6,23 @@
   box-sizing: border-box;
 }
 
-.Titulo{
-  text-align: center;
-  font-size: 40px;
-  margin-top: 10px;
+body{
+  background-image: url("img/Nubes.jpg");
+  background-position: center;
 }
 
 .tituloImg{
   display: block;
   height: 150px;
   margin: 0 auto;
+  filter: drop-shadow(0px 0px 10px #011018);
 }
 
 hr{
-  margin: 0 15%;
-  border: 2px solid #002f49
+  width: 700px;
+  margin: 20px auto;
+  border: 3px solid #002f49;
+  border-radius: 10px;
 }
 
 .fila{
@@ -34,7 +36,7 @@ hr{
   width: 300px;
   height: 530px;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px #011018;
+  box-shadow: 0px 0px 10px 3px #011018;
   margin: 15px 10px;
   padding: 0 10px;
   text-align: center;
