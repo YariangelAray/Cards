@@ -6,8 +6,24 @@
   box-sizing: border-box;
 }
 
+:root{
+  --color1: #002f49;
+  --color2: #011018;
+  --color3: #e9e2b8;
+  --color4: #000;
+  --color5: #ffffff8a;
+  --color6: #fff;
+  --color-titulo: chocolate;
+  --fondo-carta: url("img/Esferas.png");
+  --font-parrafo: "Jura", sans-serif;
+  --font-titulo: "Bowlby One", sans-serif;
+  --border-radius: 10px;
+  --fondo-imagen: url("img/Nubes.jpg"), linear-gradient(var(--color5), var(--color5));
+  --font-boton: "Roboto Mono", monospace;
+}
+
 body{
-  background-image: url("img/Nubes.jpg"), linear-gradient(#ffffff8a,#ffffff8a);
+  background-image: var(--fondo-imagen);
   background-blend-mode:lighten;
   background-position: center;
   background-size: 300px;
@@ -17,32 +33,31 @@ body{
   display: block;
   height: 150px;
   margin: 0 auto;
-  filter: drop-shadow(0px 0px 10px #011018);
+  filter: drop-shadow(0px 0px 10px var(--color2));
 }
 
 hr{
   width: 700px;
   margin: 20px auto;
-  border: 3px solid #002f49;
-  border-radius: 10px;
+  border: 3px solid var(--color1);
+  border-radius: var(--border-radius);
 }
 
 .fila{
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .card{
   display: inline-block;
-  background-color: #e9e2b8;
+  background-color: var(--color3);
   width: 300px;
   height: 530px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 3px #011018;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 0px 10px 3px var(--color2);
   margin: 15px 10px;
   padding: 0 10px;
   text-align: center;
-  background-image: url("img/Esferas.png");
+  background-image: var(--fondo-carta);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: top 5% center;
@@ -50,34 +65,34 @@ hr{
 
 .img{
   height: 55%;
-  filter: drop-shadow(0 0 8px #011018);
+  filter: drop-shadow(0 0 8px var(--color2));
   display: block;
   margin: 15px auto 0;
 }
 
 h1{
-  font-family: "Bowlby One", sans-serif;
-  color: chocolate;
-  filter: drop-shadow(1px 1px #000);
+  font-family: var(--font-titulo);
+  color: var(--color-titulo);
+  filter: drop-shadow(1px 1px var(--color4));
   margin: 5px 0;
   letter-spacing: 1.5px;
   font-size:x-large;
 }
 
 p{
-  font-family: "Jura", sans-serif;
+  font-family: var(--font-parrafo);
   font-weight: bolder;
 }
 
 .info{
-  font-family: "Roboto Mono", monospace;
+  font-family: var(--font-boton);
   font-weight: bold;
   text-decoration: none;
   display:inline-block;
-  color: #fff;
-  background-color: #002f49;
+  color: var(--color6);
+  background-color: var(--color1);
   padding: 10px 30px;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   margin: 15px;
-  box-shadow: 0 0 3px #000;
+  box-shadow: 0 0 3px var(--color4);
 }
